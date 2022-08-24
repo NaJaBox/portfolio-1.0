@@ -1,0 +1,28 @@
+@import "base";
+// You need the base only when you are not using bootstrap. In that case, go to _base.scss
+// to customize it as you may want.
+
+// @import "variables";
+// @import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Write your sass code here or import partials
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body img{
+    width: 25rem;
+    padding-top: 6rem;
+}
+
+h1 {
+//   text-align: center;
+  padding: 3rem;
+  font-size: 7rem;
+  color: rgb(65, 79, 37);
+ 
+}
