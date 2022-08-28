@@ -1,0 +1,262 @@
+$primClr: #011627;
+$firstClr: #38a3a5;
+$secondClr: #38a3a5;
+
+@mixin card {
+  width: 90%;
+  height: 60vh;
+  margin: auto;
+  margin-bottom: 3rem;
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.5)
+  );
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+}
+
+.carousel {
+  background: white;
+  height: 80vh;
+  margin: auto;
+  width: 90%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+  border-radius: 2rem;
+  z-index: 1;
+  backdrop-filter: blur(2rem);
+  display: flex;
+}
+
+.about {
+  background: white;
+  height: 80vh;
+  margin: auto;
+  width: 90%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+  border-radius: 2rem;
+  z-index: 1;
+  backdrop-filter: blur(2rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .card-about {
+    height: 80%;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 2rem;
+    background: linear-gradient(
+      to left top,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.5)
+    );
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+    font-size: 1.2vmax;
+    h1 {
+      font-family: "Courgette", cursive;
+      padding-bottom: 3rem;
+    }
+
+    p {
+      font-family: "Noto Serif HK", serif;
+      padding: 1.5rem 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: $firstClr;
+      &:hover {
+        color: olive;
+      }
+    }
+  }
+}
+
+.circle1,
+.circle2,
+.circle3 {
+  height: 15rem;
+  width: 15rem;
+  position: absolute;
+  z-index: 0;
+}
+
+.circle1 {
+  background: red;
+  border-radius: 50%;
+  top: 10%;
+  left: 5%;
+}
+.circle2 {
+  width: 0;
+  height: 0;
+  border-top: 10rem solid transparent;
+  border-bottom: 10rem solid transparent;
+  border-left: 10rem solid blue;
+  bottom: 13%;
+  right: 5%;
+}
+.circle3 {
+  background: green;
+  top: 40%;
+  left: 45%;
+}
+
+carousel {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  font-size: 3vmin;
+
+  h1 {
+    font-family: "Courgette", cursive;
+    padding-bottom: 3rem;
+  }
+
+  p {
+    font-family: "Noto Serif HK", serif;
+    padding: 1.5rem 0;
+    text-align: start;
+  }
+
+  a {
+    text-decoration: none;
+    color: $firstClr;
+    &:hover {
+      color: olive;
+      text-align: start;
+    }
+  }
+
+  .link{
+    width: 100%;
+  }
+
+  section {
+    position: absolute;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    top: 2em;
+    left: 0;
+    width: 100%;
+    transition: transform 0.5s;
+    transform: scale(0);
+    div {
+      padding: 4em;
+    }
+    label {
+      cursor: pointer;
+      background: $primClr;
+      color: $secondClr;
+      border-radius: 10px;
+      padding: 0.5em 1em;
+      margin-top: 1rem;
+    }
+
+    .card {
+      width: 90%;
+      height: 60vh;
+      margin: auto;
+      margin-bottom: 3rem;
+      background: linear-gradient(
+        to left top,
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.5)
+      );
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+    }
+  }
+
+  .container {
+    display: flex;
+    padding: 1rem 2rem;
+    .card {
+      max-height: 35rem;
+      margin: auto;
+      margin-bottom: 2rem;
+      background: linear-gradient(
+        to left top,
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.5)
+      );
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+    }
+
+    .card2 {
+      background-image: url(/src/images/mobile-design.jpg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+
+    .card-mix {
+      display: flex;
+      justify-content: center;
+      width: 85%;
+      height: 35rem;
+      margin: auto;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      background: linear-gradient(
+        to left top,
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.5)
+      );
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+      .card3 {
+        background-image: url(/src/images/desktop-design.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
+      .card3a {
+        background-image: url(/src/images/active-states.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
+    }
+
+    .card4 {
+      background-image: url(/src/images/pp-active-states.jpg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+
+    .card4a {
+      background-image: url(/src/images/pp-mobile-design.jpg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+  }
+
+  @for $i from 1 through 4 {
+    #page#{$i}a:checked ~ {
+      #page#{$i} {
+        transform: scale(1);
+      }
+    }
+  }
+}

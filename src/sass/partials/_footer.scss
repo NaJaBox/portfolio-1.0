@@ -1,0 +1,136 @@
+$primClr: #011627;
+$firstClr: #38a3a5;
+$secondClr: #52796f;
+
+footer {
+  // position: absolute;
+  // left: 0;
+  // bottom: 0;
+  height: 13rem;
+  // width: 100%;
+  border-top-left-radius: 80%;
+  border-top-right-radius: 80%;
+  background-color: $primClr;
+  display: flex;
+  h1,
+  p {
+    color: whitesmoke;
+  }
+
+  img {
+    width: 1.5rem;
+    height: 0.8rem;
+    padding: 0 5px;
+    filter: invert(42%) sepia(65%) saturate(1910%) hue-rotate(163deg)
+      brightness(97%) contrast(101%);
+  }
+  a {
+    padding: 10px;
+  }
+}
+
+.footer-txt {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .txt1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .choice {
+      display: flex;
+      padding: 1rem;
+      gap: 2rem;
+    }
+    .choice :nth-child(1) {
+      font-size: 1.2rem;
+      color: #01a660;
+    }
+    .choice :nth-child(2) {
+      font-size: 1.2rem;
+      color: $firstClr;
+      text-decoration: line-through;
+    }
+  }
+
+  .txt2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+
+    .copyright {
+      // width: 100vw;
+      align-self: flex-end;
+      // padding: 0.5rem 1rem;
+      // display: none;
+    }
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 5;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #cad2c5;
+  border-radius: 5px;
+  width: 25rem;
+  position: relative;
+  top: 25%;
+  transition: all 5s ease-in-out;
+
+  .btn{
+    font-size: 1.3rem;
+    padding: .5rem;
+    margin-top: .5rem;
+    border-radius: 7px;
+    background-color: #cad2c5;
+    cursor: pointer;
+    &:hover{
+      background-color: #a6b39e;
+    }
+  }
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+}
+.popup .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #d8065e;
+}
+.popup {
+  max-height: 30%;
+  overflow: auto;
+}

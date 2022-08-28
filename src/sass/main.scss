@@ -1,28 +1,135 @@
-@import "base";
-// You need the base only when you are not using bootstrap. In that case, go to _base.scss
-// to customize it as you may want.
+@import "./partials/css-reset";
+@import "./partials/_navigation.scss";
+@import "./partials/footer";
+@import url(./partials/_animation.scss);
+@import "./partials/cards";
 
-// @import "variables";
-// @import "../../node_modules/bootstrap/scss/bootstrap";
+$primClr: #011627;
+$firstClr: #38a3a5;
+$secondClr: #52796f;
 
-// Write your sass code here or import partials
-
+html,
 body {
+  height: 100%;
+  background-color: $secondClr;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-family: "Courgette", cursive;
+  font-family: "Noto Serif HK", serif;
+}
+
+//--Navigation --//
+
+header {
+  width: 100%;
+  height: 4rem;
+  position: fixed;
+  background-color: #011627;
+  z-index: 3;
+  padding: 0 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+
+  img {
+    height: 2rem;
+    filter: invert(42%) sepia(65%) saturate(1910%) hue-rotate(163deg)
+      brightness(97%) contrast(101%);
+  }
+}
+
+//-- Hero section --//
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  background-color: $primClr;
+  display: flex;
+  flex-direction: column;
+
+  .content {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Courgette", cursive;
+  }
+
+  a {
+    align-self: center;
+    padding: 2rem;
+  }
+}
+.intro-txt {
+  width: 40rem;
+  height: 20rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  .intro {
+    position: absolute;
+    color: whitesmoke;
+    font-size: 12vmax;
+  }
+}
+.hero-txt {
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+  padding-left: 5rem;
+  h1 {
+    color: whitesmoke;
+    padding: 3rem 0;
+    font-size: 3vmax;
+  }
+  h2 {
+    color: whitesmoke;
+    padding-bottom: 0.5rem;
+    font-size: 1.8vmax;
+  }
+  span {
+    color: $firstClr;
+    font-size: 2.5vmax;
+    padding-left: 0.5rem;
+  }
 }
 
-body img{
-    width: 25rem;
-    padding-top: 6rem;
+.hero-img {
+  width: 60%;
+  height: 80%;
+  // margin: 4rem 0;
+  background-size: contain;
+  // aspect-ratio: .4;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/hero.jpg);
+  box-shadow: 0 0 5rem 11rem $primClr inset;
 }
 
-h1 {
-//   text-align: center;
-  padding: 3rem;
-  font-size: 7rem;
-  color: rgb(65, 79, 37);
- 
+// -- Carousel --//
+
+.midSec {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+@media (max-width: 600px) {
+  header {
+    width: 100vw;
+    left: 0;
+    transition: all 0.7s ease-in-out;
+  }
 }
