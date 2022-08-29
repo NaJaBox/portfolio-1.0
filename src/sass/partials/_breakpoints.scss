@@ -1,0 +1,79 @@
+@media (max-width: 770px) {
+  .hero .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .hero-txt {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 2rem;
+      padding-left: 0;
+    }
+
+    .hero-img {
+      width: 90%;
+      height: 90%;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      box-shadow: 0 14rem 5rem 6rem $primClr inset;
+    }
+  }
+
+  carousel .container {
+    flex-direction: column;
+    padding: .5rem 0.5rem;
+    padding-top: 0;
+  }
+ 
+  .about .card-about{
+    width: 80%;
+  }
+ 
+
+  footer .txt2{
+    font-size: 1.5vmax;
+  }
+
+}
+
+@media (min-width: 771px) and (max-width:850px){
+      .hero .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .hero-txt {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 2rem;
+      padding-left: 0;
+    }
+
+    .hero-img {
+      width: 90%;
+      height: 90%;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      box-shadow: 0rem 13rem 5rem 7rem $primClr inset;
+    }
+  }
+
+   .about .card-about{
+    width: 80%;
+  }
+
+    carousel .container  {
+    padding-top: 13rem;
+  }
+}

@@ -3,11 +3,7 @@ $firstClr: #38a3a5;
 $secondClr: #52796f;
 
 footer {
-  // position: absolute;
-  // left: 0;
-  // bottom: 0;
   height: 13rem;
-  // width: 100%;
   border-top-left-radius: 80%;
   border-top-right-radius: 80%;
   background-color: $primClr;
@@ -63,13 +59,6 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 0 1rem;
-
-    .copyright {
-      // width: 100vw;
-      align-self: flex-end;
-      // padding: 0.5rem 1rem;
-      // display: none;
-    }
   }
 }
 
@@ -100,14 +89,14 @@ footer {
   top: 25%;
   transition: all 5s ease-in-out;
 
-  .btn{
+  .btn {
     font-size: 1.3rem;
-    padding: .5rem;
-    margin-top: .5rem;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
     border-radius: 7px;
     background-color: #cad2c5;
     cursor: pointer;
-    &:hover{
+    &:hover {
       background-color: #a6b39e;
     }
   }

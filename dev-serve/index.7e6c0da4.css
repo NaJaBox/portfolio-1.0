@@ -408,10 +408,6 @@ footer a {
   display: flex;
 }
 
-.footer-txt .txt2 .copyright {
-  align-self: flex-end;
-}
-
 .overlay {
   visibility: hidden;
   opacity: 0;
@@ -476,19 +472,6 @@ footer a {
   overflow: auto;
 }
 
-.carousel {
-  height: 80vh;
-  width: 90%;
-  z-index: 1;
-  -webkit-backdrop-filter: blur(2rem);
-  backdrop-filter: blur(2rem);
-  background: linear-gradient(to bottom right, #ffffffb3, #ffffff4d);
-  border-radius: 2rem;
-  margin: auto;
-  display: flex;
-  box-shadow: 6px 6px 20px #7a7a7a36;
-}
-
 .about {
   height: 80vh;
   width: 90%;
@@ -510,7 +493,7 @@ footer a {
   background: linear-gradient(to top left, #fffc, #ffffff80);
   border-radius: 1rem;
   margin: auto auto 2rem;
-  padding: 2rem;
+  padding: 1rem;
   font-size: 1.2vmax;
   box-shadow: 6px 6px 20px #7a7a7a36;
 }
@@ -532,6 +515,20 @@ footer a {
 
 .about .card-about a:hover {
   color: olive;
+}
+
+.carousel {
+  height: 80vh;
+  width: 90%;
+  z-index: 1;
+  -webkit-backdrop-filter: blur(2rem);
+  backdrop-filter: blur(2rem);
+  background: linear-gradient(to bottom right, #ffffffb3, #ffffff4d);
+  border-radius: 2rem;
+  flex-direction: column;
+  margin: auto;
+  display: flex;
+  box-shadow: 6px 6px 20px #7a7a7a36;
 }
 
 .circle1, .circle2, .circle3 {
@@ -567,18 +564,19 @@ footer a {
 carousel {
   width: 100%;
   text-align: center;
-  font-size: 3vmin;
+  flex-direction: column;
+  font-size: 1.5vmax;
   display: inline-block;
 }
 
 carousel h1 {
-  padding-bottom: 3rem;
+  padding-bottom: 1vmax;
   font-family: Courgette, cursive;
 }
 
 carousel p {
   text-align: start;
-  padding: 1.5rem 0;
+  padding: 1.5vmax 0;
   font-family: Noto Serif HK, serif;
 }
 
@@ -592,10 +590,6 @@ carousel a:hover {
   text-align: start;
 }
 
-carousel .link {
-  width: 100%;
-}
-
 carousel section {
   width: 100%;
   transition: transform .5s;
@@ -606,7 +600,7 @@ carousel section {
 }
 
 carousel section div {
-  padding: 4em;
+  padding: 5em;
 }
 
 carousel section label {
@@ -620,25 +614,27 @@ carousel section label {
 
 carousel section .card {
   width: 90%;
-  height: 60vh;
+  height: 90vh;
   background: linear-gradient(to top left, #fffc, #ffffff80);
   border-radius: 1rem;
-  margin: auto auto 3rem;
+  margin: auto auto 3vmax;
   padding: 2rem;
   box-shadow: 6px 6px 20px #7a7a7a36;
 }
 
 carousel .container {
-  padding: 1rem 2rem;
+  align-items: center;
+  padding: 1rem 4rem;
   display: flex;
 }
 
 carousel .container .card {
-  max-height: 35rem;
+  max-height: 30vmax;
   background: linear-gradient(to top left, #fffc, #ffffff80);
   border-radius: 1rem;
   margin: auto auto 2rem;
   padding: 2rem;
+  display: inline-block;
   box-shadow: 6px 6px 20px #7a7a7a36;
 }
 
@@ -649,28 +645,8 @@ carousel .container .card2 {
   background-size: contain;
 }
 
-carousel .container .card-mix {
-  width: 85%;
-  height: 35rem;
-  background: linear-gradient(to top left, #fffc, #ffffff80);
-  border-radius: 1rem;
-  justify-content: center;
-  gap: 1rem;
-  margin: auto auto 2rem;
-  padding: 2rem;
-  display: flex;
-  box-shadow: 6px 6px 20px #7a7a7a36;
-}
-
-carousel .container .card-mix .card3 {
+carousel .container .card3 {
   background-image: url("desktop-design.8c121478.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-carousel .container .card-mix .card3a {
-  background-image: url("active-states.dfb4792c.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -692,6 +668,83 @@ carousel .container .card4a {
 
 carousel #page1a:checked ~ #page1, carousel #page2a:checked ~ #page2, carousel #page3a:checked ~ #page3, carousel #page4a:checked ~ #page4 {
   transform: scale(1);
+}
+
+@media (max-width: 770px) {
+  .hero .content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .hero .content .hero-txt {
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    padding-left: 0;
+    display: flex;
+  }
+
+  .hero .content .hero-img {
+    width: 90%;
+    height: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-shadow: inset 0 14rem 5rem 6rem #011627;
+  }
+
+  carousel .container {
+    flex-direction: column;
+    padding: 0 .5rem .5rem;
+  }
+
+  .about .card-about {
+    width: 80%;
+  }
+
+  footer .txt2 {
+    font-size: 1.5vmax;
+  }
+}
+
+@media (min-width: 771px) and (max-width: 850px) {
+  .hero .content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .hero .content .hero-txt {
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    padding-left: 0;
+    display: flex;
+  }
+
+  .hero .content .hero-img {
+    width: 90%;
+    height: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-shadow: inset 0 13rem 5rem 7rem #011627;
+  }
+
+  .about .card-about {
+    width: 80%;
+  }
+
+  carousel .container {
+    padding-top: 13rem;
+  }
 }
 
 html, body {
@@ -724,7 +777,7 @@ header img {
   width: 100vw;
   height: 100vh;
   background-color: #011627;
-  flex-direction: column;
+  flex-flow: column;
   display: flex;
 }
 
@@ -755,6 +808,7 @@ header img {
 
 .intro-txt .intro {
   color: #f5f5f5;
+  opacity: 0;
   font-size: 12vmax;
   position: absolute;
 }
@@ -793,7 +847,7 @@ header img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  box-shadow: inset 0 0 5rem 11rem #011627;
+  box-shadow: inset 0 3rem 5rem 11rem #011627;
 }
 
 .midSec {
@@ -806,6 +860,7 @@ header img {
 @media (max-width: 600px) {
   header {
     width: 100vw;
+    padding: 0 .25rem;
     transition: all .7s ease-in-out;
     left: 0;
   }
