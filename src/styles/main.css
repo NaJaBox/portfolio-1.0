@@ -155,7 +155,14 @@ footer a {
 
 .footer-txt {
   width: 100%;
+<<<<<<< HEAD
   display: flex;
+=======
+<<<<<<< HEAD:src/styles/index.7f6e1797.css
+=======
+  display: flex;
+>>>>>>> 474113c4fe994ff82f23756bbec9c2346722d353:src/styles/main.css
+>>>>>>> 474113c4fe994ff82f23756bbec9c2346722d353
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -429,6 +436,222 @@ footer a {
     transform: rotate(0.5turn) scale(0.5);
   }
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD:src/styles/index.7f6e1797.css
+
+@media (min-width: 600px) {
+  .intro {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+  }
+
+  .txt1 {
+    animation-delay: 1s;
+  }
+
+  .txt2 {
+    animation-delay: 4s;
+  }
+
+  .txt3 {
+    animation-delay: 7s;
+  }
+
+  .hero-txt h1 {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-delay: 11s;
+    animation-fill-mode: forwards;
+  }
+
+  .hero-txt h2 {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-delay: 12s;
+    animation-fill-mode: forwards;
+  }
+
+  .hero-img {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-delay: 13s;
+    animation-fill-mode: forwards;
+  }
+
+  header img {
+    opacity: 0;
+    animation-name: goLeft;
+    animation-duration: 2s;
+    animation-delay: 15s;
+    animation-fill-mode: forwards;
+  }
+
+  nav ul {
+    opacity: 0;
+    animation-name: goRight;
+    animation-duration: 2s;
+    animation-delay: 15s;
+    animation-fill-mode: forwards;
+  }
+
+  .hero a {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-delay: 16s;
+    animation-fill-mode: forwards;
+  }
+
+  .circle1 {
+    animation-name: cRed;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+  }
+
+  .circle2 {
+    animation-name: cBlue;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+  }
+
+  .circle3 {
+    animation-name: cGreen;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes goLeft {
+  0% {
+    opacity: .2;
+    transform: translateX(40rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes goRight {
+  0% {
+    opacity: .2;
+    transform: translateX(-40rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: scale(.7);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes cRed {
+  0% {
+    transform: translate3d(0);
+  }
+
+  20% {
+    transform: translate3d(20rem, 30rem, 50rem);
+  }
+
+  40% {
+    transform: translate3d(40rem, 25rem, 20rem);
+  }
+
+  60% {
+    transform: translate3d(60rem, 15rem, 60rem);
+  }
+
+  80% {
+    transform: translate3d(80rem, 15rem, 30rem);
+  }
+
+  100% {
+    transform: translate3d(0);
+    overflow: hidden;
+    transform: scale(.7);
+  }
+}
+
+@keyframes cBlue {
+  0% {
+    transform: translate3d(0);
+    transform: rotate(45deg)scale(.5);
+  }
+
+  20% {
+    transform: translate3d(-20rem, -25rem, 50rem);
+  }
+
+  40% {
+    transform: translate3d(-40rem, -20rem, 20rem);
+  }
+
+  60% {
+    transform: translate3d(-60rem, -10rem, 60rem);
+  }
+
+  80% {
+    transform: translate3d(-75rem, -10rem, 30rem);
+  }
+
+  100% {
+    transform: translate3d(0);
+    transform: rotate(.5turn);
+  }
+}
+
+@keyframes cGreen {
+  0% {
+    transform: translate3d(0);
+    transform: rotate(.5turn)scale(1.5);
+  }
+
+  20% {
+    transform: translate3d(10rem, 5rem, 50rem);
+  }
+
+  40% {
+    transform: translate3d(-20rem, -15rem, 20rem);
+  }
+
+  60% {
+    transform: translate3d(-30rem, 10rem, 60rem);
+  }
+
+  80% {
+    transform: translate3d(40rem, -15rem, 30rem);
+  }
+
+  100% {
+    transform: translate3d(0);
+    transform: rotate(.5turn)scale(.5);
+  }
+}
+
+=======
+>>>>>>> 474113c4fe994ff82f23756bbec9c2346722d353:src/styles/main.css
+>>>>>>> 474113c4fe994ff82f23756bbec9c2346722d353
 .about {
   background: white;
   height: 80vh;
@@ -446,16 +669,38 @@ footer a {
 .about .card-about {
   height: 33vmax;
   width: 45%;
+<<<<<<< HEAD
   margin: auto;
   background: linear-gradient(to left top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5));
   border-radius: 1rem;
+=======
+<<<<<<< HEAD:src/styles/index.7f6e1797.css
+  background: linear-gradient(to top left, #fffc, #ffffff80);
+  border-radius: 1rem;
+  margin: auto;
+=======
+  margin: auto;
+  background: linear-gradient(to left top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5));
+  border-radius: 1rem;
+>>>>>>> 474113c4fe994ff82f23756bbec9c2346722d353:src/styles/main.css
+>>>>>>> 474113c4fe994ff82f23756bbec9c2346722d353
   padding: 1rem;
   box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
   font-size: 1.2vmax;
 }
 .about .card-about h1 {
+<<<<<<< HEAD
   font-family: "Courgette", cursive;
   padding-bottom: 3vmax;
+=======
+<<<<<<< HEAD:src/styles/index.7f6e1797.css
+  padding-bottom: 3vmax;
+  font-family: Courgette, cursive;
+=======
+  font-family: "Courgette", cursive;
+  padding-bottom: 3vmax;
+>>>>>>> 474113c4fe994ff82f23756bbec9c2346722d353:src/styles/main.css
+>>>>>>> 474113c4fe994ff82f23756bbec9c2346722d353
 }
 .about .card-about p {
   font-family: "Noto Serif HK", serif;
@@ -493,9 +738,29 @@ footer a {
   box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
 }
 
+<<<<<<< HEAD
 .circle1,
 .circle2,
 .circle3 {
+=======
+<<<<<<< HEAD:src/styles/index.7f6e1797.css
+.carousel .card {
+  width: 90%;
+  height: 90vh;
+  background: linear-gradient(to top left, #fffc, #ffffff80);
+  border-radius: 1rem;
+  margin: auto auto 3vmax;
+  padding: 2rem;
+  box-shadow: 6px 6px 20px #7a7a7a36;
+}
+
+.circle1, .circle2, .circle3 {
+=======
+.circle1,
+.circle2,
+.circle3 {
+>>>>>>> 474113c4fe994ff82f23756bbec9c2346722d353:src/styles/main.css
+>>>>>>> 474113c4fe994ff82f23756bbec9c2346722d353
   height: 15rem;
   width: 15rem;
   position: absolute;
@@ -528,6 +793,14 @@ footer a {
 carousel {
   width: 100%;
   text-align: center;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD:src/styles/index.7f6e1797.css
+  flex-direction: column;
+  font-size: 1.4vmax;
+=======
+>>>>>>> 474113c4fe994ff82f23756bbec9c2346722d353:src/styles/main.css
+>>>>>>> 474113c4fe994ff82f23756bbec9c2346722d353
   display: inline-block;
   flex-direction: column;
   font-size: 1.4vmax;
@@ -568,11 +841,45 @@ carousel section label {
   padding: 0.5em 1em;
   margin-top: 1rem;
 }
+<<<<<<< HEAD
 carousel section .container {
+=======
+<<<<<<< HEAD:src/styles/index.7f6e1797.css
+
+carousel section .container {
+  align-items: center;
+  padding: 1rem 2rem;
+=======
+carousel section .container {
+>>>>>>> 474113c4fe994ff82f23756bbec9c2346722d353:src/styles/main.css
+>>>>>>> 474113c4fe994ff82f23756bbec9c2346722d353
   display: flex;
   align-items: center;
   padding: 1rem 2rem;
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD:src/styles/index.7f6e1797.css
+
+carousel section .container .card {
+  max-height: 30vmax;
+  border-radius: 1rem;
+  margin: auto auto 1rem;
+  padding: 2rem;
+  box-shadow: 6px 6px 20px #7a7a7a36;
+}
+
+carousel section .container .card2 {
+  background-image: url("mobile-design.8a108f44.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+carousel section .container .card3 {
+  background-image: url("desktop-design.8c121478.jpg");
+=======
+>>>>>>> 474113c4fe994ff82f23756bbec9c2346722d353
 carousel section .container .card {
   max-height: 30vmax;
   margin: auto;
@@ -585,18 +892,42 @@ carousel section .container .card2 {
   background-image: url(../../images/mobile-design.jpg);
   background-repeat: no-repeat;
   background-size: contain;
+<<<<<<< HEAD
+=======
+>>>>>>> 474113c4fe994ff82f23756bbec9c2346722d353:src/styles/main.css
+>>>>>>> 474113c4fe994ff82f23756bbec9c2346722d353
   background-position: center;
 }
 carousel section .container .card3 {
   background-image: url(../../images/desktop-design.jpg);
   background-repeat: no-repeat;
   background-size: contain;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD:src/styles/index.7f6e1797.css
+}
+
+carousel section .container .card4 {
+  background-image: url("pp-active-states.553691d3.jpg");
+=======
+>>>>>>> 474113c4fe994ff82f23756bbec9c2346722d353:src/styles/main.css
+>>>>>>> 474113c4fe994ff82f23756bbec9c2346722d353
   background-position: center;
 }
 carousel section .container .card4 {
   background-image: url(../../images/pp-active-states.jpg);
   background-repeat: no-repeat;
   background-size: contain;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD:src/styles/index.7f6e1797.css
+}
+
+carousel section .container .card4a {
+  background-image: url("pp-mobile-design.a48d2dc4.jpg");
+=======
+>>>>>>> 474113c4fe994ff82f23756bbec9c2346722d353:src/styles/main.css
+>>>>>>> 474113c4fe994ff82f23756bbec9c2346722d353
   background-position: center;
 }
 carousel section .container .card4a {
@@ -619,6 +950,16 @@ carousel #page4a:checked ~ #page4 {
 }
 
 @media (min-width: 370px) and (max-width: 412px) {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD:src/styles/index.7f6e1797.css
+  .circle1, .circle2, .circle3, footer .popup, footer .overlay {
+    display: none;
+  }
+}
+
+=======
+>>>>>>> 474113c4fe994ff82f23756bbec9c2346722d353
   .circle1,
 .circle2,
 .circle3 {
@@ -629,6 +970,10 @@ footer .overlay {
     display: none;
   }
 }
+<<<<<<< HEAD
+=======
+>>>>>>> 474113c4fe994ff82f23756bbec9c2346722d353:src/styles/main.css
+>>>>>>> 474113c4fe994ff82f23756bbec9c2346722d353
 @media (max-width: 770px) {
   .hero .content {
     display: flex;
@@ -696,12 +1041,26 @@ footer .overlay {
     margin-top: 10rem;
   }
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD:src/styles/index.7f6e1797.css
+
+html, body {
+  scroll-behavior: smooth;
+  background-color: #52796f;
+  font-family: Noto Serif HK, serif;
+=======
+>>>>>>> 474113c4fe994ff82f23756bbec9c2346722d353
 html,
 body {
   background-color: #52796f;
   scroll-behavior: smooth;
   font-family: "Courgette", cursive;
   font-family: "Noto Serif HK", serif;
+<<<<<<< HEAD
+=======
+>>>>>>> 474113c4fe994ff82f23756bbec9c2346722d353:src/styles/main.css
+>>>>>>> 474113c4fe994ff82f23756bbec9c2346722d353
 }
 
 header {
@@ -743,6 +1102,14 @@ header img {
 }
 
 .intro-txt {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD:src/styles/index.7f6e1797.css
+  justify-content: center;
+  align-items: center;
+=======
+>>>>>>> 474113c4fe994ff82f23756bbec9c2346722d353:src/styles/main.css
+>>>>>>> 474113c4fe994ff82f23756bbec9c2346722d353
   margin: auto;
   display: flex;
   justify-content: center;
@@ -790,8 +1157,18 @@ header img {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+<<<<<<< HEAD
   background-image: url(../images/hero.jpg);
   box-shadow: 0 3rem 4rem 11rem #011627 inset;
+=======
+<<<<<<< HEAD:src/styles/index.7f6e1797.css
+  background-size: contain;
+  box-shadow: inset 0 3rem 4rem 11rem #011627;
+=======
+  background-image: url(../images/hero.jpg);
+  box-shadow: 0 3rem 4rem 11rem #011627 inset;
+>>>>>>> 474113c4fe994ff82f23756bbec9c2346722d353:src/styles/main.css
+>>>>>>> 474113c4fe994ff82f23756bbec9c2346722d353
 }
 
 .midSec {
@@ -803,10 +1180,26 @@ header img {
 
 @media (max-width: 600px) {
   header {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD:src/styles/index.7f6e1797.css
+    padding: 0 .25rem;
+    transition: all .7s ease-in-out;
+=======
+>>>>>>> 474113c4fe994ff82f23756bbec9c2346722d353:src/styles/main.css
+>>>>>>> 474113c4fe994ff82f23756bbec9c2346722d353
     left: 0;
     transition: all 0.7s ease-in-out;
     padding: 0 0.25rem;
   }
 }
 
+<<<<<<< HEAD
 /*# sourceMappingURL=main.css.map */
+=======
+<<<<<<< HEAD:src/styles/index.7f6e1797.css
+/*# sourceMappingURL=index.7f6e1797.css.map */
+=======
+/*# sourceMappingURL=main.css.map */
+>>>>>>> 474113c4fe994ff82f23756bbec9c2346722d353:src/styles/main.css
+>>>>>>> 474113c4fe994ff82f23756bbec9c2346722d353

@@ -1,12 +1,30 @@
 {
-  "name": "portfolio-1.0",
+  "name": "sass-from-scratch",
   "version": "1.0.0",
+<<<<<<< HEAD
   "description": "PortfolioPage",
+=======
+  "description": "",
+  "main": "index.html",
+>>>>>>> 474113c4fe994ff82f23756bbec9c2346722d353
   "scripts": {
-    "start": "rm -rf dev-serve && parcel src/index.html --dist-dir dev-serve",
-    "build": "rm -rf build && parcel build src/index.html --dist-dir build --public-url ./",
-    "publish": "gh-pages -d build"
+    "________": "SCRIPTS FOR USING SASS ________",
+    "serve": "live-server src",
+    "watch": "sass --watch src/scss:src/styles",
+    "start": "run-p serve watch",
+
+    "————————": "SCRIPTS FOR DEPLOYMENT ————————",
+    "clean": "rm -rf dist",
+    "clean:styles": "rm -rf src/styles",
+    "build:styles": "sass src/scss:src/styles",
+    "copy": "mkdir dist && rsync -av --exclude=\"/scss\" src/ dist",
+
+    "build": "run-s clean clean:styles build:styles copy",
+    "publish": "gh-pages -d dist",
+
+    "deploy": "run-s build publish"
   },
+<<<<<<< HEAD
   "author": "NagyJanos",
   "license": "ISC",
   "devDependencies": {
@@ -26,4 +44,15 @@
     "url": "https://github.com/NaJaBox/portfolio-1.0/issues"
   },
   "homepage": "https://github.com/NaJaBox/portfolio-1.0#readme"
+=======
+  "keywords": [],
+  "author": "James",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^3.2.3",
+    "live-server": "^1.2.1",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.49.9"
+  }
+>>>>>>> 474113c4fe994ff82f23756bbec9c2346722d353
 }
