@@ -1,7 +1,7 @@
 @import "./partials/css-reset";
 @import "./partials/_navigation.scss";
 @import "./partials/footer";
-@import url(./partials/_animation.scss);
+@import "./partials/_animation.scss";
 @import "./partials/cards";
 @import "./partials/breakpoints";
 
@@ -11,10 +11,10 @@ $secondClr: #52796f;
 
 html,
 body {
-  height: 100%;
+  // height: 100%;
   background-color: $secondClr;
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  // overflow-x: hidden;
   font-family: "Courgette", cursive;
   font-family: "Noto Serif HK", serif;
 }
@@ -22,7 +22,7 @@ body {
 //--Navigation --//
 
 header {
-  width: 100%;
+  width: 100vw;
   height: 4rem;
   position: fixed;
   background-color: #011627;
@@ -43,7 +43,7 @@ header {
 //-- Hero section --//
 
 .hero {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-color: $primClr;
   display: flex;
@@ -51,7 +51,7 @@ header {
   flex-wrap: nowrap;
 
   .content {
-    width: 100vw;
+    width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-around;
@@ -65,8 +65,8 @@ header {
   }
 }
 .intro-txt {
-  width: 40rem;
-  height: 20rem;
+  // width: 40rem;
+  // height: 20rem;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -115,7 +115,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-image: url(../images/hero.jpg);
-  box-shadow: 0 3rem 5rem 11rem $primClr inset;
+  box-shadow: 0 3rem 4rem 11rem $primClr inset;
 }
 
 // -- Carousel --//
@@ -129,7 +129,7 @@ header {
 
 @media (max-width: 600px) {
   header {
-    width: 100vw;
+    // width: 100%;
     left: 0;
     transition: all 0.7s ease-in-out;
     padding: 0 0.25rem;

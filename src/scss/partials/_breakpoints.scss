@@ -1,3 +1,23 @@
+@media (min-width:370px) and (max-width:412px)  {
+  .circle1,
+.circle2,
+.circle3 {
+  // height: 2rem;
+  // width: 2rem;
+  // position: absolute;
+  // z-index: 0;
+  display: none;
+}
+
+footer .popup,
+footer .overlay{
+  display: none;
+
+}
+
+}
+
+
 @media (max-width: 770px) {
   .hero .content {
     display: flex;
@@ -74,6 +94,7 @@
   }
 
     carousel .container  {
-    padding-top: 13rem;
+    // padding-top: 13rem;
+    margin-top: 10rem;
   }
 }
