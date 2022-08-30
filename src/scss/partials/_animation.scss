@@ -30,19 +30,19 @@
     animation-delay: 11s;
   }
 
-  .hero-txt h2 {
+   .hero-txt h2 {
     @include hero;
     animation-duration: 2s;
     animation-delay: 12s;
   }
 
-  .hero-img {
+    .hero-img {
     @include hero;
     animation-duration: 3s;
     animation-delay: 13s;
   }
 
-  header img {
+    header img {
     animation-name: goLeft;
     animation-fill-mode: forwards;
     opacity: 0;
@@ -58,27 +58,28 @@
     animation-delay: 15s;
   }
 
-  .hero a {
+ .hero a {
     @include hero;
     animation-duration: 3s;
     animation-delay: 16s;
   }
 
-    .circle1 {
-      animation-name: cRed;
-      animation-duration: 30s;
-      animation-iteration-count: infinite;
-    }
-    .circle2 {
-      animation-name: cBlue;
-      animation-duration: 40s;
-      animation-iteration-count: infinite;
-    }
-    .circle3 {
-      animation-name: cGreen;
-      animation-duration: 50s;
-      animation-iteration-count: infinite;
-    }
+
+  .circle1 {
+    animation-name: cRed;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+  }
+  .circle2 {
+    animation-name: cBlue;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+  }
+  .circle3 {
+    animation-name: cGreen;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+  }
 }
 
 @keyframes goLeft {
